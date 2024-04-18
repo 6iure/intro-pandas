@@ -15,7 +15,12 @@ df
 
 # %% 
 
-df.describe()
+sumario_numericas = df.describe()
+sumario_numericas
+
+# %%
+
+df['nome'].describe()
 
 # %%
 dados_idade = df['idade'] 
@@ -28,3 +33,7 @@ dados_idade.mean()
 df['nome'].iloc[2]
 # %%
 df['nome'][2]
+
+# %%
+
+df['nome'].iloc[-1]
